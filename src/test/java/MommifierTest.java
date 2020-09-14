@@ -18,4 +18,11 @@ public class MommifierTest {
         String result = mommifier.convert("ahyphjkslxzmn");
         assertEquals("ahyphjkslxzmn", result);
     }
+
+    @Test
+    void should_return_string_insert_mommy_when_convert_given_number_of_vowels_more_than_30percent(){
+        Mommifier mommifier =new Mommifier();
+        String result = mommifier.convert("aebrispou");
+        assertEquals("amommyebrispomommyu", result);
+    }
 }
